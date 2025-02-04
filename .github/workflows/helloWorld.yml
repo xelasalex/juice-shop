@@ -1,12 +1,14 @@
-Name:"Self-Hosted Cl"
-run-name:"Compilacion en Servidor Linux"
+name: Self-Hosted Cl
+
 on:
   push:
     branches:
       -master
 jobs:
-  build:
-    runs-on:self-hosted #se ejecuta el runner self -hosted
+  security:
+    runs-on: self-hosted #se ejecuta el runner self -hosted
     steps:
-    -name:Checkou del codigo
-    uses:actions/checkout@v4
+      - name: Checkou del codigo
+        uses: actions/checkout@v4
+
+      
